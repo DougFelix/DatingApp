@@ -9,8 +9,9 @@ namespace API.DTO
     public class RegisterDto
     {
         [Required]
+        [MaxLength(100)]
         public string UserName { get; set; }
-        
+
         [Required]
         public string Password { get; set; }
     }
