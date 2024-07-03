@@ -10,19 +10,16 @@ import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavComponent
-  ],
+  declarations: [AppComponent, NavComponent],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
